@@ -1,0 +1,201 @@
+/* https://coolors.co/cfdbd5-e8eddf-f5cb5c-242423-333533 */
+
+/* https://coolors.co/a9cef4-36494e-000000-7ea0b7-597081 */
+html {
+    font-size: 1em;
+}
+body {
+    background-color: #000000;
+    /* overflow: hidden; */
+}
+section#intro {
+    background-color: #000000;
+    color: white;
+    height: 100vh;
+}
+
+#intro h1 {
+    font-family: monospace;
+    color: #a9cef4;
+
+    /* opacity: 0;
+    animation-name: fadein;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
+
+    overflow: hidden;
+    border-right: 0.05em solid #a9cef4;
+    font-size: 4rem;
+    width: 0;
+    animation: typing 1.5s steps(16, end) forwards, blink 0.8s infinite;
+}
+.typewriterContianer {
+    display: inline-block;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: #a9cef4;
+    }
+}
+
+#intro h3 {
+    margin-top: 20px;
+    opacity: 0;
+    animation-name: fadein;
+    animation-timing-function: ease-in;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#intro code {
+    margin-top: 20px;
+
+    opacity: 0;
+    animation-name: fadein;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+}
+
+#arrow span {
+    font-size: 3rem;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a:link {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+#arrow:hover span {
+    color: #597081;
+    font-size: 4rem;
+}
+
+section#about {
+    min-height: 30vh;
+    background-color: #597081;
+    color: white;
+    padding: 30px;
+}
+
+section#contact {
+    background-color: #7ea0b7;
+    min-height: 30vh;
+    color: white;
+    padding: 30px;
+}
+
+section#about h3,
+section#contact h3,
+section#portfolio h3 {
+    font-size: 48px;
+}
+
+section#about p,
+section#contact p {
+    font-size: 24px;
+}
+
+#sendEmail span {
+    color: white;
+}
+
+#contact input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#sendFormInput {
+    width: 100%;
+    background-color: #597081;
+    border: none;
+}
+
+section#portfolio {
+    min-height: 30vh;
+    padding: 30px;
+    background-color: #a9cef4;
+}
+
+.navbar {
+    background-color: #7ea0b7 !important;
+}
+
+#project {
+    background-color: #36494e;
+    color: white;
+    padding: 20px;
+}
+
+#project img {
+    padding-bottom: 20px;
+}
+#project span {
+    font-size: 3rem;
+}
+
+#previous:hover,
+#next:hover {
+    color: #7ea0b7;
+}
+
+#linksTechStack {
+    margin-top: 1rem;
+}
+#linksTechStack button {
+    background-color: #7ea0b7;
+    border: none;
+}
+button {
+    font-size: 1rem;
+}
+#gitHub:hover,
+#liveDemo:hover {
+    background-color: #597081;
+}
+.badge {
+    background-color: #000000;
+    font-size: 1rem !important;
+}
+
+footer {
+    color: white;
+    padding: 20px;
+    background-color: #597081;
+}
+
+a {
+    color: white;
+}
